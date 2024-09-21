@@ -5,6 +5,8 @@ import { FaPaperPlane } from "react-icons/fa";
 import { toast } from "react-toastify";
 import { useSession } from "next-auth/react";
 
+export const dynamic = "force-dynamic";
+
 export default function PropertyContactForm({ property }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

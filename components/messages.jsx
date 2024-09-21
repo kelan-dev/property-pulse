@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import Spinner from "./spinner";
 import Message from "./message";
 
+export const dynamic = "force-dynamic";
+
 export default function Messages() {
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(true);

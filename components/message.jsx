@@ -4,6 +4,8 @@ import { useGlobalContext } from "@/context/global-context";
 import React, { useState, useEffect, useReducer } from "react";
 import { toast } from "react-toastify";
 
+export const dynamic = "force-dynamic";
+
 export default function Message({ message, onDelete }) {
   const [isRead, setIsRead] = useState(message.read);
   const { setUnreadMsgCount } = useGlobalContext();

@@ -5,6 +5,8 @@ import { useParams, useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 import { fetchProperty } from "@/utils/requests";
 
+export const dynamic = "force-dynamic";
+
 export default function PropertyEditForm() {
   const { id } = useParams();
   const router = useRouter();

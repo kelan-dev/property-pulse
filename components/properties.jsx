@@ -5,6 +5,8 @@ import PropertyCard from "./property-card";
 import Spinner from "./spinner";
 import Pagination from "./pagination";
 
+export const dynamic = "force-dynamic";
+
 export default function Properties() {
   const [properties, setProperties] = useState([]);
   const [isLoading, setIsLoading] = useState(true);

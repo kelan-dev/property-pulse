@@ -5,6 +5,8 @@ import PropertyCard from "@/components/property-card";
 import Spinner from "@/components/spinner";
 import { toast } from "react-toastify";
 
+export const dynamic = "force-dynamic";
+
 export default function SavedPropertiesPage() {
   const [properties, setProperties] = useState([]);
   const [isLoading, setIsLoading] = useState(true);

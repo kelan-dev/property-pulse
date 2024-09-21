@@ -3,6 +3,8 @@
 import { useGlobalContext } from "@/context/global-context";
 import React, { useEffect } from "react";
 
+export const dynamic = "force-dynamic";
+
 export default function UnreadMessageCount({ session }) {
   const { unreadMsgCount, setUnreadMsgCount } = useGlobalContext();
 

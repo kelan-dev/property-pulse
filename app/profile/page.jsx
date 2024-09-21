@@ -8,6 +8,8 @@ import profileDefault from "@/assets/images/profile.png";
 import Spinner from "@/components/spinner";
 import { toast } from "react-toastify";
 
+export const dynamic = "force-dynamic";
+
 export default function ProfilePage() {
   const { data: session } = useSession();
   const profileImage = session?.user?.image;
